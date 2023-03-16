@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>	<link rel="icon" href="title.png" />
+  <title>Aptitude Test | Punjab High School</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #marq {
+    background-color: crimson;
+    color: white;
+    font-size: large;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  ul li {
+    list-style: none;
+    margin: 0 8px;
+    transition: 0.5s;
+  }
+
+  ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+
+  ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: #fff;
+  }
+
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+
+  ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .quiz {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #888888;
+  }
+
+  .question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #3e8e41;
+  }
+</style>
+<header>
+  <h1>Aptitude Test | English Literature</h1>
+  <nav>
+    <ul>
+      <li><a href="Punjab High School.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <li><a href="logIn.html">Log In</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <marquee id="marq" behavior="banner" direction="left">
+    After this test you will know better where your knowledge stands with
+    respect to your choosen field. Good Luck</marquee>
+  <div class="quiz">
+    <form>
+      <div class="question">In which sport is the term "love" used?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a" />Tennis </label>
+        <label><input type="radio" name="q1" value="b" />Basketball</label>
+        <label><input type="radio" name="q1" value="b" />Football</label>
+        <label><input type="radio" name="q1" value="c" />Golf</label>
+      </div>
+      <div class="question">
+        2. What is the highest score a gymnast can get on a single apparatus in Olympic gymnastics?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a" /> 10</label>
+        <label><input type="radio" name="q2" value="b" /> 20</label>
+        <label><input type="radio" name="q2" value="c" /> 15</label>
+        <label><input type="radio" name="q2" value="c" /> 5</label>
+      </div>
+      <div class="question">Which country has won the most FIFA World Cup titles?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a" />Brazil</label>
+        <label><input type="radio" name="q2" value="b" />Germany</label>
+        <label><input type="radio" name="q2" value="c" />Argentina</label>
+        <label><input type="radio" name="q2" value="c" />Italy</label>
+      </div>
+      <div class="question">4. Which of these sports is not part of the Olympic Games?</div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a" />Badminton</label>
+        <label><input type="radio" name="q2" value="b" />Squash</label>
+        <label><input type="radio" name="q2" value="c" />Curling</label>
+        <label><input type="radio" name="q2" value="c" />Tug pf War</label>
+      </div>
+      <div class="question">5. Who holds the record for the most Grand Slam singles titles in men's tennis?
+    </div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a" /> Rafael Nadal</label>
+        <label><input type="radio" name="q2" value="b" /> Pete Sampras</label>
+        <label><input type="radio" name="q2" value="c" /> Roger Federer</label>
+        <label><input type="radio" name="q2" value="c" /> Novak Djokovic/label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
